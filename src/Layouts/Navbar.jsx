@@ -8,13 +8,10 @@ import {
   IconButton,
   Toolbar,
   Stack,
-  MenuItem,
   Badge,
-  Typography,
   InputBase,
 } from '@mui/material'
 
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';

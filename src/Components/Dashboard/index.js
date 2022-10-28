@@ -125,7 +125,7 @@ const Dashboard = () => {
               </Card>
             </Grid>
 
-            <Grid item lg={6} md={12} sm={12} xs={12}>
+            <Grid item lg={6} md={6} sm={12} xs={12}>
               <Card className={styles.cardThree} elevation={3}>
                 <CardActionArea>
                   <CardContent>
@@ -147,13 +147,13 @@ const Dashboard = () => {
               </Card>
             </Grid>
 
-            <Grid item lg={6} md={12} sm={12} xs={12}>
+            <Grid item lg={6} md={6} sm={12} xs={12}>
               <Card className={styles.cardFour} elevation={3}>
                 <CardActionArea>
                   <CardContent>
                     <Typography className={styles.cardHeading} variant='h5'>
                       <Avatar className={styles.profitAvatar}>
-                        <CurrencyRupeeIcon />
+                        <Icon icon="game-icons:profit" />
                       </Avatar>
                       Net Profit Margin
                     </Typography>
@@ -175,10 +175,10 @@ const Dashboard = () => {
           <Grid item lg={6} md={12} sm={12} xs={12}>
             <ChartOne />
           </Grid>
-          <Grid item lg={3} md={12} sm={12} xs={12}>
+          <Grid item lg={3} md={6} sm={12} xs={12}>
             <ChartTwo />
           </Grid>
-          <Grid item lg={3} md={12} sm={12} xs={12}>
+          <Grid item lg={3} md={6} sm={12} xs={12}>
             <ChartThree />
           </Grid>
         </Grid>

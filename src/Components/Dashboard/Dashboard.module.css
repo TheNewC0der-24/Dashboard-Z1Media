@@ -1,0 +1,121 @@
+.header {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+}
+
+.heading {
+    display: flex !important;
+}
+
+.avatar {
+    margin-right: 10px !important;
+    background-color: #e5e9fa !important;
+    transform: translateY(-2.5px) !important;
+}
+
+.dashboardIcon {
+    color: #708ff5 !important;
+}
+
+.welcomeCard {
+    background-color: #f7e5e9 !important;
+}
+
+.welcomeText {
+    color: #fe616f !important;
+    font-weight: bold !important;
+}
+
+.welcomeImage {
+    width: auto !important;
+    height: auto !important;
+    max-width: 200px !important;
+    margin: auto !important;
+    padding: 1rem !important;
+}
+
+.display {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.cardContent {
+    margin: auto !important;
+}
+
+.cardOne {
+    background-color: #4d4cac !important;
+    max-width: 100% !important;
+}
+
+
+.cardTwo {
+    background-color: #9698d6 !important;
+    max-width: 100% !important;
+}
+
+.cardThree {
+    background-color: #ff808b !important;
+    max-width: 100% !important;
+}
+
+.cardFour {
+    background-color: #85d0b1 !important;
+    max-width: 100% !important;
+}
+
+.cardHeading {
+    color: #fff !important;
+}
+
+.incomeAvatar {
+    /* margin-right: 10px !important; */
+    background-color: #5a5ab2 !important;
+    /* transform: translateY(-2.5px) !important; */
+    margin-bottom: 10px !important;
+}
+
+.expensesAvatar {
+    /* margin-right: 10px !important; */
+    background-color: #a4a6db !important;
+    /* transform: translateY(-2.5px) !important; */
+    margin-bottom: 10px !important;
+}
+
+.cashAvatar {
+    /* margin-right: 10px !important; */
+    background-color: #ff919b !important;
+    /* transform: translateY(-2.5px) !important; */
+    margin-bottom: 10px !important;
+}
+
+.profitAvatar {
+    /* margin-right: 10px !important; */
+    background-color: rgba(172, 232, 207, 0.5) !important;
+    /* transform: translateY(-2.5px) !important; */
+    margin-bottom: 10px !important;
+}
+
+.cardNumber {
+    color: #fff !important;
+    font-weight: bold !important;
+    margin-top: 10px !important;
+}
+
+.icon {
+    transform: translateY(7.5px) !important;
+}
+
+.agentButton {
+    background-color: #5a5ab2 !important;
+}
+
+.transactionButton {
+    background-color: #a4a6db !important;
+}
+
+.turnoverButton {
+    background-color: #ff919b !important;
+}

@@ -17,8 +17,7 @@ import { styled, alpha } from "@mui/material/styles";
 import { Icon } from "@iconify/react";
 import roundDashboard from '@iconify/icons-ic/round-dashboard';
 import personFill from '@iconify/icons-eva/person-fill';
-import roundWorkspaces from '@iconify/icons-ic/round-workspaces';
-
+import settings2Fill from '@iconify/icons-eva/settings-2-fill';
 
 import profilePic from "../../assets/profile.png";
 
@@ -147,7 +146,7 @@ const Profile = () => {
         <MenuItem onClick={handleClose} disableRipple>
           <Box
             component={Icon}
-            icon={roundWorkspaces}
+            icon={settings2Fill}
             sx={{
               mr: 2,
               width: 24,

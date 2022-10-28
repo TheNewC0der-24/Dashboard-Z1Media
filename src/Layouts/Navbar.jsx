@@ -13,6 +13,7 @@ import {
 } from '@mui/material'
 
 import SearchIcon from '@mui/icons-material/Search';
+import MenuIcon from '@mui/icons-material/Menu';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
@@ -74,6 +75,14 @@ const Navbar = ({ handleDrawerToggle }) => {
         }}
       >
         <Toolbar>
+          <IconButton
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: 'none' } }}
+          >
+            <MenuIcon />
+          </IconButton>
           <Search>
             <SearchIconWrapper>
               <SearchIcon sx={{ color: "#000" }} />
@@ -97,66 +106,11 @@ const Navbar = ({ handleDrawerToggle }) => {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <Stack direction='row' style={{ display: "flex", justifyContent: "end", marginLeft: "auto" }}>
-              <Profile />
-            </Stack>
           </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-haspopup="true"
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
-          </Box>
+          <Stack direction='row' style={{ display: "flex", justifyContent: "end", marginLeft: "auto" }}>
+            <Profile />
+          </Stack>
         </Toolbar>
-        {/* <Toolbar>
-          <IconButton
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Box sx={{
-            color: 'black',
-            width: '100vw',
-            display: 'flex',
-            justifyContent: 'space-between'
-          }}>
-            <div direction='row' style={{ display: "flex", justifyContent: "end", marginLeft: "auto" }}>
-              <MenuItem>
-                <IconButton
-                  size="large"
-                  aria-label="show 17 new notifications"
-                  color="inherit"
-                >
-                  <Badge variant="dot" color="error">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-              </MenuItem>
-              <MenuItem>
-                <IconButton
-                  size="large"
-                  aria-label="show 17 new notifications"
-                  color="inherit"
-                >
-                  <Badge variant="dot" color="error">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-              </MenuItem>
-            </div>
-
-            <Stack direction='row' style={{ display: "flex", justifyContent: "end", marginLeft: "auto" }}>
-              <Profile />
-            </Stack>
-          </Box>
-        </Toolbar> */}
       </AppBar>
     </Box>
   )

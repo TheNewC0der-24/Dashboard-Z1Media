@@ -8,24 +8,28 @@ import {
 
 import {
     Chart as ChartJS,
-    CategoryScale,
     LinearScale,
+    CategoryScale,
+    BarElement,
     PointElement,
     LineElement,
-    Title,
-    Tooltip,
     Legend,
+    Tooltip,
+    LineController,
+    BarController,
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import { Chart } from 'react-chartjs-2';
 
 ChartJS.register(
-    CategoryScale,
     LinearScale,
+    CategoryScale,
+    BarElement,
     PointElement,
     LineElement,
-    Title,
+    Legend,
     Tooltip,
-    Legend
+    LineController,
+    BarController
 );
 
 const options = {
@@ -34,24 +38,29 @@ const options = {
         legend: {
             position: 'top',
         },
-
-        // title: {
-        //     display: true,
-        //     text: 'Chart.js Line Chart',
-        // },
     },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const labels = ['Jan 01', "Jan 03", "Jan 05", "Jan 07", "Jan 09", "Jan 11"];
 
 const data = {
     labels,
     datasets: [
         {
-            label: 'Avg 5,309',
-            data: [65, 0, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56],
-            borderColor: '#4d4cac',
-            backgroundColor: 'rgba(90, 90, 178, 0.5)',
+            type: 'line',
+            label: 'AP',
+            borderColor: 'rgb(255, 99, 132)',
+            borderWidth: 2,
+            fill: false,
+            data: [50, 54, 74, 63, 70, 76, 63, 70, 76, 63, 70, 76],
+        },
+        {
+            type: 'bar',
+            label: 'AR',
+            backgroundColor: 'rgb(75, 192, 192)',
+            data: [67, 54, 80, 81, 56, 55, 40, 30, 20, 10, 75, 14],
+            borderColor: 'white',
+            borderWidth: 2,
         },
     ],
 };
@@ -66,7 +75,7 @@ function ChartOne() {
                             AP and AR Balance
                         </Typography>
 
-                        <Line options={options} data={data} />
+                        <Chart type='bar' data={data} options={options} />
                     </CardContent>
                 </Card>
             </Box>

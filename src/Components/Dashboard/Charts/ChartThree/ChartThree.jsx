@@ -25,7 +25,7 @@ const data = {
     labels: ['Balance : 31,430', 'Total'],
     datasets: [
         {
-            data: [67, 100],
+            data: [48, 100],
             backgroundColor: [
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(75, 192, 192, 0.2)',

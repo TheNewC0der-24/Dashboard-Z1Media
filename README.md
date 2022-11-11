@@ -5,6 +5,7 @@
 
 ## Built With 
 |React.JS|Material UI|
+|---|---|
 
 ## Preview
 ![image](https://github.com/TheNewC0der-24/Z1-Media-Assignment/blob/master/Z1%20Media%20Assignment%20Preview.png)
